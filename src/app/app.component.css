@@ -1,0 +1,94 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f6f8fa;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+}
+
+app-navbar {
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.04);
+  margin-bottom: 2rem;
+}
+
+.main-content, main {
+  flex: 1;
+  width: 100%;
+  max-width: 750px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+  min-height: 60vh;
+}
+
+h1, h2, h3 {
+  color: #22577a;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+label {
+  font-weight: 500;
+  color: #364f6b;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1.1rem;
+  border: 1px solid #b4bec9;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f6f8fa;
+  box-sizing: border-box;
+}
+
+button {
+  background: #22577a;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.05);
+}
+
+button:hover {
+  background: #38a3a5;
+}
+
+a {
+  color: #22577a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s;
+}
+a:hover {
+  color: #38a3a5;
+  text-decoration: underline;
+}
+
+app-footer {
+  margin-top: auto;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(30, 64, 175, 0.03);
+  background: #e4e9f7;
+  color: #425c77;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0 0 12px 12px;
+}
