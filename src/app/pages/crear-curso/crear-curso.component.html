@@ -1,0 +1,48 @@
+<div class="crear-curso-container">
+  <h2>Crear Curso</h2>
+  <form [formGroup]="cursoForm" (ngSubmit)="crearCurso()">
+    <div>
+      <label>Nombre:</label>
+      <input formControlName="nombre" />
+      <div *ngIf="cursoForm.get('nombre')?.invalid && cursoForm.get('nombre')?.touched" style="color:red;">
+        El nombre es obligatorio.
+      </div>
+    </div>
+    <div>
+      <label>Descripción:</label>
+      <input formControlName="descripcion" />
+      <div *ngIf="cursoForm.get('descripcion')?.invalid && cursoForm.get('descripcion')?.touched" style="color:red;">
+        La descripción es obligatoria.
+      </div>
+    </div>
+    <div>
+      <label>Duración (horas):</label>
+      <input type="number" formControlName="duracion" min="1"/>
+      <div *ngIf="cursoForm.get('duracion')?.invalid && cursoForm.get('duracion')?.touched" style="color:red;">
+        Debe ser al menos 1 hora.
+      </div>
+    </div>
+    <div>
+      <label>Fecha de inicio:</label>
+      <input type="date" formControlName="fechaInicio" />
+      <div *ngIf="cursoForm.get('fechaInicio')?.invalid && cursoForm.get('fechaInicio')?.touched" style="color:red;">
+        La fecha es obligatoria.
+      </div>
+    </div>
+    <div>
+      <label>Modalidad:</label>
+      <input formControlName="modalidad" />
+      <div *ngIf="cursoForm.get('modalidad')?.invalid && cursoForm.get('modalidad')?.touched" style="color:red;">
+        La modalidad es obligatoria.
+      </div>
+    </div>
+    <div>
+      <label>Docente:</label>
+      <input formControlName="docente" />
+      <div *ngIf="cursoForm.get('docente')?.invalid && cursoForm.get('docente')?.touched" style="color:red;">
+        El docente es obligatorio.
+      </div>
+    </div>
+    <button type="submit">Guardar</button>
+  </form>
+</div>

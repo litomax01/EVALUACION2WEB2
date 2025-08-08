@@ -1,0 +1,13 @@
+<div class="cursos-lista">
+  <h2>Lista de Cursos</h2>
+  <ul>
+    <li *ngFor="let curso of cursos">
+      <strong>{{ curso.nombre | uppercase }}</strong><br>
+      {{ curso.descripcion }}<br>
+      Duración: {{ curso.duracion | horas }}<br>
+      Fecha de inicio: {{ curso.fechaInicio }}<br>
+      Modalidad: {{ curso.modalidad }}<br>
+      Docente: {{ curso.docente }}
+    </li>
+  </ul>
+</div>

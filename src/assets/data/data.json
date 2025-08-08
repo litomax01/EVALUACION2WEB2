@@ -1,0 +1,20 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "admin",
+      "password": "123456"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nombre": "Angular Básico",
+      "descripcion": "Curso introductorio de Angular.",
+      "duracion": 40,
+      "fechaInicio": "2025-08-10",
+      "modalidad": "Virtual",
+      "docente": "Edgar Bonifaz"
+    }
+  ]
+}
